@@ -1,0 +1,510 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#main {
+    width: 98.8vw;
+    height: 108vh;
+    background-image: url("photocopy1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.header nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    position: sticky;
+    justify-content: space-around;
+
+}
+
+.header nav h2 {
+    margin: 10px 0 0 0;
+    width: 20vw;
+    height: 7vh;
+    display: flex;
+    /* flex-wrap: wrap; */
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+
+}
+
+.header nav h2 span {
+    font-size: 45px;
+    color: rgb(247, 0, 123);
+}
+
+.header nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 15px 20px;
+}
+
+.header nav ul li a {
+    color: rgb(1, 1, 5);
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+    position: relative;
+}
+
+.header nav ul li a::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: rgb(247, 0, 123);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    border-radius: 40%;
+    opacity: 0%;
+    transition: 1s, 0.5s;
+
+}
+
+.header nav ul li a:hover::after {
+    transform: scale(1.1);
+    opacity: 100%;
+    width: 100%;
+}
+
+.header nav ul li a:hover {
+    font-size: 20.5px;
+   
+}
+
+.header nav ul li a :hover ::after {
+
+    text-decoration: rgb(247, 0, 123) underline;
+    opacity: 100%;
+
+}
+
+.content {
+    float:right;
+    margin: 15%;
+    font-size: 30px;
+}
+
+.content b {
+    color: rgb(247, 0, 123);
+}
+
+.content span {
+    color: rgb(247, 0, 123);
+}
+
+
+
+
+/* ------------------css of about contanier-------------------*/
+
+
+.about_me {
+    width: 98.8vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: -55px;
+    margin-top: -50px;
+}
+
+.about_me h2 {
+    margin-left: 14%;
+    margin-top: 4%;
+    margin-bottom: -5%;
+    padding-top: 50px;
+    /* text-align: center; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 1000;
+    font-size: 45px;
+    color: rgb(255, 145, 0);
+}
+
+#about {
+    width: 98.8vw;
+    height: 100vh;
+    /* padding-left: 10%;
+    padding-right: 10%; */
+    padding: 29px;
+    margin-bottom: 10px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-attachment: scroll;
+    box-sizing: border-box;
+}
+
+.photo {
+    flex-basis: 25%;
+    height: 70vh;
+    margin: auto 0% auto 7%;
+    /* border: 2px solid rgb(199, 25, 25); */
+    border-radius: 3%;
+    /* background-image: url("./bg.jpg")  ; */
+    background-image: url("3.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.detail {
+   
+    flex-basis: 60%;
+    height: 70vh;
+    padding: 1% 2% 2% 2%;
+   overflow-y: scroll;
+    color: antiquewhite;
+    margin: -1px 7% auto 0%;
+    /* border: 2px solid rgb(199, 25, 25); */
+    padding-left: 80px;
+    margin-top: 55px;
+   
+}
+.detail h3{
+    text-indent: 30px;
+    letter-spacing: 5px;
+    padding-left: 0px;
+}
+.detail h3 span{
+    color: rgb(247, 0, 123);
+}
+
+
+
+.detail h2 {
+    /* margin: 5px auto auto 30px; */
+    
+    margin: 25px auto 0px -0px;
+    font-size: 45px;
+    color: azure;
+    text-align: left;
+    margin-top: -15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.detail div h4{
+    margin-bottom: 10px;
+    font-size: 19px;
+    /* background-color: aqua;
+    width: auto;
+    height: 2px; */
+    position: relative;
+
+}
+.detail div h4::after{
+    content: "";
+    margin-top: 20px;
+   left: 0px;
+    position:absolute;
+    background-color: aqua;
+    width: 100%;
+    height: 2px;
+}
+
+.detail div p{
+    margin: 0px;
+ 
+}
+.detail h2 span {
+    font-size: 41px;
+    font-weight: bolder;
+    color: rgb(255, 145, 0);
+}
+
+.detail p {
+   margin-bottom: 15px;
+    margin-right: 20%;
+    padding-top: 12px;
+    text-indent: 25px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+
+::-webkit-scrollbar{
+   width: 1em;
+}
+::-webkit-scrollbar-track{
+    height: min-content; 
+    background: rgb(5, 5, 5);
+}
+::-webkit-scrollbar-thumb{
+
+    border-radius: 50px;
+    background:rgb(221, 255, 0);
+    border: 3px solid black;
+}
+/* --------------servies--------- */
+#servies {
+    background-color: black;
+    width: 100%;
+    height: 102vh;
+    padding-top: 20px;
+
+}
+
+#servies h2 {
+    margin-left: 15%;
+    margin-top: 4%;
+    padding-bottom: 20px;
+    margin-bottom: -5%;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 1000;
+    font-size: 45px;
+    color: rgb(255, 145, 0);
+
+}
+
+.servies_offered {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.s {
+    margin-top: 10%;
+    flex-wrap: wrap;
+    flex-basis: 19%;
+    height: 45vh;
+    background: rgb(24, 23, 23);
+    color: beige;
+    border-radius: 5%;
+    transition: 0.5s;
+    text-align: center;
+}
+.s h2{
+    display: block;
+    margin: 17%;
+}
+
+.s:hover {
+    /* background-color: rgb(186, 212, 22); */
+    background: linear-gradient(rgb(0, 238, 255), rgb(0, 85, 255),rgb(55, 0, 255),rgb(127, 0, 195));
+    transform: translateY(-10px);
+    
+}
+
+.s h3 {
+    padding: 12% 10%;
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(255, 0, 106);
+}
+
+.s p {
+    padding: 0% 10%;
+    margin-top: -15%;
+
+}
+
+.s h2 i {
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px;
+    padding-right: 9px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 5, 109);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+/* ------------------portfolio--------------- */
+
+#portfolio {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    padding-top: 5%;
+    margin-top: 0%;
+
+
+}
+
+#portfolio h2 {
+
+    margin-left: 15%;
+    margin-top: 4%;
+    padding-bottom: 20px;
+    margin-bottom: -5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 45px;
+    font-weight: 1000;
+    color: rgb(255, 145, 0);
+
+}
+
+.cont {
+    
+    display: flex;
+   
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.cont div {
+    
+    /* float: center; */
+    width: 21.5%;
+    height: 55vh;
+    border-radius: 10px;
+    position: relative;
+   display: block;
+   overflow: hidden;
+  
+
+
+}
+
+.cont div img {
+        width: 100%;
+    height: auto;
+    transition: tranform 0.0s;
+}
+.cont div div{
+  
+    position:absolute;
+    color: azure;
+    width:100%;
+    height: 100%;
+    font-size: 35px;
+    margin-top: 0%;
+    text-align: center;
+    justify-content: center;
+    padding-top: 20%;
+    background:linear-gradient(rgb(24 23 23 / 54%),rgb(253 0 105));
+}
+.cont div div h3{
+    color: aqua;
+    font-weight: 900;
+    font-size: 88%;
+   }
+   .cont div div p{
+    font-size: 77%;
+   }
+   
+.cont div:hover img{
+    transform: scale(1.1);
+    cursor: pointer;
+    
+}
+.cont div:hover div{
+   margin-top: -118%; 
+   cursor: pointer;
+}
+
+/* --------------contact---------- */
+
+#contact {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: beige;
+    margin-top: 0%;
+    padding-top: 1%;
+}
+
+#contact h2 {
+    display: block;
+    margin-left: 41%;
+    padding: 3%;
+    padding-bottom: 75px;
+
+
+}
+
+.contact_detail {
+    display: block;
+    text-align: center;
+    margin: 8px;
+
+
+}
+
+.contact_detail div {
+    padding: 15px;
+
+
+}
+
+.contact_detail div i p {
+    display: inline;
+    font-size: 20px;
+    color: rgb(237, 233, 241);
+}
+
+.contact_detail div i {
+    color: crimson;
+}
+
+.footer {
+    background-color: rgb(44, 44, 44);
+    font-size: larger;
+    height: 15%;
+    padding-top: 20px;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.contact_detail div i {
+    font-size: 25px;
+}
+
+
+.btn {
+    background-color: crimson;
+    border-radius: 5px;
+    width: 15%;
+    font-size: 18px;
+    margin-left: 42%;
+    margin-top: 2.5%;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color:rgb(170, 0, 255);
+    color: black;
+}
+.contact_detail div i:hover {
+ color: rgb(170, 0, 255);
+ transform: scale(1.1);
+ cursor: pointer;
+}
+.contact_detail div i:hover p{
+    color: aqua;
+ transform: scale(1.1);
+ cursor: pointer;
+}
+.links{
+    width: 40%;
+   display: flex;
+   justify-content: center;
+   margin: auto;
+}
+.links div{
+  
+    flex-basis: 45px;
+}
+.links div i{
+    font-size: 43px;
+}
